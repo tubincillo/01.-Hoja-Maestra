@@ -1,0 +1,54 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+  }
+
+.titulo-principal{
+  font-size: 3rem;
+  text-align: center;
+  color: rgba(42, 42, 143, 0.993);
+  padding: 5px;
+}
+
+.division{
+    background-color: blueviolet;
+    display: flex;
+    color: rgb(0, 70, 0);
+    font-size: 150%;
+    justify-content:flex-start;
+    padding: 1%;
+}
+
+.subtitulo-ingreso-de-datos{
+
+    padding: 1% 8% 1% 5%;    
+    width: 25%;
+}
+
+.input{
+    width: 60%;   
+    margin-left: 20px; 
+    padding-left: 10px;;
+    border-radius: 10px;
+}
+.botones{
+  display: flex;  
+  justify-content: center;
+  padding: 4px;
+}
+
+.negrilla{
+  font-weight: bold;
+}
+
+.adicional{
+  background-color: brown;
+}

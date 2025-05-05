@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hoja Maestra</title>
+        <link rel="stylesheet" href="/CSS/styles.css" />
+    </head>
+    <body>
+        <h1 class="titulo-principal">Hoja Maestra</h1>
+        
+        <form action="/webs/convenio.html" method="GET" id="form" class="form">
+        <section name="Datos-Personales">
+            <div class="division">
+                <label class="subtitulo-ingreso-de-datos">Nombre:</label>
+                <input id="nombre" class="input nombre" type="text" placeholder="Ej: Pedro" required>
+            </div>
+
+            <div class="division">
+                <label class="subtitulo-ingreso-de-datos">Apellido:</label>
+                <input id="apellido" class="input apellido" type="text" placeholder="Ej: Gomez" required>
+            </div>
+
+            <div class="division">
+                <label class="subtitulo-ingreso-de-datos">Dirección:</label>
+                <input id="direccion" class="input direccion" type="text" placeholder="Ej: Calle Santa Cruz y Portales" required>
+            </div>
+
+            <div class="division">
+                <label class="subtitulo-ingreso-de-datos">C.I.:</label>
+                <input id="ci" class="input ci" type="number" placeholder="Ej: 5055823" required>
+            </div>
+
+            <div class="division">
+                <label class="subtitulo-ingreso-de-datos">Expedido:</label>
+                <select name="expedido" id="expedido" class="input expedido" required>
+
+                    <option value="Santa Cruz">Santa Cruz</option>
+                    <option value="La Paz">La Paz</option>
+                    <option value="Cochabamba">Cochabamba</option>
+                    <option value="Oruro" selected>Oruro</option>
+                    <option value="Sucre">Sucre</option>
+                    <option value="Potosi">Potosi</option>
+                    <option value="Tarija">Tarija</option>
+                    <option value="Beni">Beni</option>
+                    <option value="Pando">Pando</option>
+                  </select>
+            </div>
+
+            <div class="division">
+                <label class="subtitulo-ingreso-de-datos">Estado Civil:</label>
+                <select name="estadoCivil" id="turno" class="input estadoCivil" required>
+
+                    <option value="Soler@" selected>Soler@</option>
+                    <option value="Casad@">Casad@</option>
+                    <option value="Divorciad@">Divorciad@</option>
+                  </select>
+            </div>
+
+            <div class="division">
+                <label class="subtitulo-ingreso-de-datos">Género:</label>
+                <select name="genero" id="genero" class="input genero" required>
+
+                    <option value="Masculino" selected>Masculino</option>
+                    <option value="Femenino">Femenino</option>                    
+                  </select>
+            </div>
+        </section>
+        
+
+        <section name="Datos-Adicionales">
+            <div class="division adicional">
+                <label class="subtitulo-ingreso-de-datos">Teléfono Fijo:</label>
+                <input id="telefonoFijo" class="input telefonoFijo" type="number" placeholder="Ej: 25254993">
+            </div>
+
+            <div class="division adicional">
+                <label class="subtitulo-ingreso-de-datos">Teléfono Celular:</label>
+                <input id="telefonoCelular" class="input telefonoCelular" type="number" placeholder="Ej: 72459028" required>
+            </div>
+
+            <div class="division adicional">
+                <label class="subtitulo-ingreso-de-datos">Teléfono de Referencia:</label>
+                <input id="telefonoDeReferencia" class="input telefonoDeReferencia" type="number" placeholder="Ej: 75289634" required>
+            </div>
+
+            <div class="division adicional">
+                <label class="subtitulo-ingreso-de-datos">Profesión:</label>
+                <input id="profesion" class="input profesion" type="text" placeholder="Ej: Ingeniero, Arquitecto, Estudiante, etc." required>
+            </div>
+
+            <div class="division adicional">
+                <label class="subtitulo-ingreso-de-datos">Fecha de Nacimiento:</label>
+                <input id="fechaDeNacimiento" class="input fechaDeNacimiento" type="date" placeholder="Ej: 07/08/1984" required>
+            </div>
+
+            <div class="division adicional">
+                <label class="subtitulo-ingreso-de-datos">Ciudad donde vive:</label>
+                <select name="ciudadDeResidencia" id="ciudadDeResidencia" class="input ciudadDeResidencia" required>
+
+                    <option value="Santa Cruz">Santa Cruz</option>
+                    <option value="La Paz">La Paz</option>
+                    <option value="Cochabamba">Cochabamba</option>
+                    <option value="Oruro" selected>Oruro</option>
+                    <option value="Sucre">Sucre</option>
+                    <option value="Potosi">Potosi</option>
+                    <option value="Tarija">Tarija</option>
+                    <option value="Beni">Beni</option>
+                    <option value="Pando">Pando</option>
+                  </select>
+            </div>
+
+            <div class="division adicional">
+                <label class="subtitulo-ingreso-de-datos">Turno:</label>
+                <select name="turno" id="turno" class="input turno" required>
+
+                    <option value="Mañana" selected>Mañana</option>
+                    <option value="Tarde">Tarde</option>
+                    <option value="Noche">Noche</option>
+                  </select>
+            </div>
+
+            <div class="division adicional">
+                <label class="subtitulo-ingreso-de-datos">Correo Electrónico:</label>
+                <input id="correoElectronico" class="input correoElectronico" type="email" placeholder="Ej: javi@gmail.com" required>
+            </div>
+        </section>
+
+
+        <div class="botones">
+            <input type='submit' id="boton-ingresar" class="boton-ingresar">
+        </div>
+
+    </form>
+
+
+    <script src="/JS/script.js"></script>
+    </body>
+
+</html>

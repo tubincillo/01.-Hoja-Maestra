@@ -1,0 +1,27 @@
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+  }
+  .titulo-principal{
+    font-size: 3rem;
+    text-align: center;
+    color: rgba(42, 42, 143, 0.993);
+    padding: 5px;
+  }
+  
+  .texto{
+    padding: 1% 5% 2% 5%;
+    text-align: justify;
+    font-size: 1.6rem;   
+  
+  }
+  
