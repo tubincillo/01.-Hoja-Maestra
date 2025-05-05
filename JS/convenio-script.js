@@ -25,6 +25,7 @@ const texto1erParrafo=document.getElementById('texto-1erParrafo');
 const texto1erArticulo=document.getElementById('texto-1erArticulo');
 const texto2doArticulo=document.getElementById('texto-2doArticulo');
 const texto3erArticulo=document.getElementById('texto-3erArticulo');
+const tabla=document.getElementById('tablita');
 
 
 //array con objetos del parrafo 1
@@ -36,14 +37,15 @@ const parrafo1p=[{
     parte5:  ' con cédula de identidad ',
     parte6:  ' expedido en la ciudad de ',
     parte7M: ' de aquí en adelante denominado EL CLIENTE, declaro que; habiendo accedido a contratar los servicios  profesionales de parte del Instituto Técnico S.M.A.R.T., en mi calidad  de cliente de ésta, manifiesto que cumpliré con el presente convenio de  la siguiente forma:',
-    parte7F:  ' de aquí en adelante denominada EL CLIENTE, declaro que; habiendo accedido a contratar los servicios  profesionales de parte del Instituto Técnico S.M.A.R.T., en mi calidad  de cliente de ésta, manifiesto que cumpliré con el presente convenio de  la siguiente forma:'   }];
+    parte7F:  ' de aquí en adelante denominada EL CLIENTE, declaro que; habiendo accedido a contratar los servicios  profesionales de parte del Instituto Técnico S.M.A.R.T., en mi calidad  de cliente de ésta, manifiesto que cumpliré con el presente convenio de  la siguiente forma:'
+}];
 
 //array que contiene la redaccion del 1er Articulo
 const articulo1=[{
     parte1: `PRIMERA (SERVICIOS).- La institución Smart Step Associates S.R.L. brindará a: "`,
     parte2: `el servicio de curso de aprendizaje del idioma inglés en base al programa tecnológico “Let’s Do It My Way” de acuerdo a la currícula académica presentada en el documento “Guía de Estudio."`,
     parte3: `El CLIENTE o estudiante al quedar inscrito en el Instituto, asume el compromiso de respetar y cumplir a cabalidad los reglamentos y las normas internas del mismo, entregadas en la mencionada “Guía de Estudio”. `
-    }]
+    }];
 
 //array que contiene la redaccion del 2do Articulo
 const articulo2=[{
@@ -51,12 +53,35 @@ const articulo2=[{
     parte2: `a) La asistencia mínima será controlada de manera semanal siendo 4 clases obligatorias semanales como mínimo para cada estudiante.`,
     parte3: `b) La nota de aprobación para cada nivel (o STEP) de estudio está definida en 80 puntos sobre 100.`,
     parte4: `c) Las clases inician en un horario en punto, por lo cual el estudiante tendrá la obligación de estar presente en el instituto 5 minutos antes de la hora de su clase y solo tendrá una tolerancia de hasta 5 minutos después de la hora señalada."`
-    }]
+    }];
 
 //array que contiene la redaccion del 2do Articulo
 const articulo3=[{
     parte1:`TERCERA. (CURSO O CARRERA Y DURACIÓN). - El estudiante queda inscrito en el siguiente curso(s) o carrera(s): 										`
-    }]
+    }];
+
+//opciones de los cursos a inscribirse
+const nombreCursoA='Capacitacio1';
+
+
+//tabla de articulo 3
+const tablita = `
+    <table>
+        <tr>
+            <th>Nombre del estudiante</th>
+            <th>Curso al que esta Inscrito</th>
+        </tr>
+        <tr>
+            <td>${nombre} ${apellido}</td>
+            <td>${nombreCursoA}</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>Doe</td>
+        </tr>
+    </table>
+    `;
+
 
 
 
@@ -80,6 +105,8 @@ document.addEventListener('DOMContentLoaded', function() {
     ${articulo2[0]["parte4"]}`;
 
     texto3erArticulo.innerText= `${articulo3[0]["parte1"]}`;
+
+    tabla.innerHTML = tablita;
 
   });
 
