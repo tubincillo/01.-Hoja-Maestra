@@ -24,12 +24,16 @@ html {
     font-size: 1.6rem;   
   
   }
+
+  span{
+    font-weight: bold;
+  }
   
-  .tablita{
+  table{
     font-size: 1.6rem ;
     text-align: center;
-    justify-items: center;          
     border-collapse: collapse;
+    margin: auto;;
     
 
 
@@ -37,6 +41,14 @@ html {
 
   td, th {
     padding: 1rem 3rem;
-    border: 1px solid black;    
-    border-collapse: collapse;
+    border: 1px solid black;        
+  }
+
+
+
+  .firmas td{
+    width: 30%;
+    text-align:center;
+    border: none;
+    
   }

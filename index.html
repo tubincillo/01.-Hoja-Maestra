@@ -8,27 +8,33 @@
     </head>
     <body>
         <h1 class="titulo-principal">Hoja Maestra</h1>
-        
+        <p class="subtitulos tutor">TUTOR: </p>
         <form action="/webs/convenio.html" method="GET" id="form" class="form">
-        <section name="Datos-Personales">
+        <section name="Datos-Personales" class="Datos-Personales">
+            
             <div class="division">
                 <label class="subtitulo-ingreso-de-datos">Nombre:</label>
-                <input id="nombre" class="input nombre" type="text" placeholder="Ej: Pedro" required>
+                <input id="nombre" class="input nombre" type="text" placeholder="Ej: Pedro" value="Javier Daniel" required>
             </div>
 
             <div class="division">
-                <label class="subtitulo-ingreso-de-datos">Apellido:</label>
-                <input id="apellido" class="input apellido" type="text" placeholder="Ej: Gomez" required>
+                <label class="subtitulo-ingreso-de-datos">Apellido Paterno:</label>
+                <input id="apellidoPaterno" class="input apellidoPaterno" type="text" placeholder="Ej: Castro" value="Tapia"required>
+            </div>
+
+            <div class="division">
+                <label class="subtitulo-ingreso-de-datos">Apellido Materno:</label>
+                <input id="apellidoMaterno" class="input apellidoMaterno" type="text" placeholder="Ej: Ochoa" value="Ochoa"required>
             </div>
 
             <div class="division">
                 <label class="subtitulo-ingreso-de-datos">Dirección:</label>
-                <input id="direccion" class="input direccion" type="text" placeholder="Ej: Calle Santa Cruz y Portales" required>
+                <input id="direccion" class="input direccion" type="text" placeholder="Ej: Calle Santa Cruz y Portales #254" value=" Calle Beni entre Santa Cruz #254" required>
             </div>
 
             <div class="division">
                 <label class="subtitulo-ingreso-de-datos">C.I.:</label>
-                <input id="ci" class="input ci" type="number" placeholder="Ej: 5055823" required>
+                <input id="ci" class="input ci" type="number" placeholder="Ej: 5055823" value="5066820" required>
             </div>
 
             <div class="division">
@@ -68,30 +74,30 @@
         </section>
         
 
-        <section name="Datos-Adicionales">
+        <section name="Datos-Adicionales" class="Datos-Adicionales">
             <div class="division adicional">
                 <label class="subtitulo-ingreso-de-datos">Teléfono Fijo:</label>
-                <input id="telefonoFijo" class="input telefonoFijo" type="number" placeholder="Ej: 25254993">
+                <input id="telefonoFijo" class="input telefonoFijo" type="number" placeholder="Ej: 25254993" value="5254993">
             </div>
 
             <div class="division adicional">
                 <label class="subtitulo-ingreso-de-datos">Teléfono Celular:</label>
-                <input id="telefonoCelular" class="input telefonoCelular" type="number" placeholder="Ej: 72459028" required>
+                <input id="telefonoCelular" class="input telefonoCelular" type="number" placeholder="Ej: 72459028" value="72459030" required>
             </div>
 
             <div class="division adicional">
                 <label class="subtitulo-ingreso-de-datos">Teléfono de Referencia:</label>
-                <input id="telefonoDeReferencia" class="input telefonoDeReferencia" type="number" placeholder="Ej: 75289634" required>
+                <input id="telefonoDeReferencia" class="input telefonoDeReferencia" type="number" placeholder="Ej: 75289634" value="73819310" required>
             </div>
 
             <div class="division adicional">
                 <label class="subtitulo-ingreso-de-datos">Profesión:</label>
-                <input id="profesion" class="input profesion" type="text" placeholder="Ej: Ingeniero, Arquitecto, Estudiante, etc." required>
+                <input id="profesion" class="input profesion" type="text" placeholder="Ej: Ingeniero, Arquitecto, Estudiante, etc." value="Ingeniero" required>
             </div>
 
             <div class="division adicional">
                 <label class="subtitulo-ingreso-de-datos">Fecha de Nacimiento:</label>
-                <input id="fechaDeNacimiento" class="input fechaDeNacimiento" type="date" placeholder="Ej: 07/08/1984" required>
+                <input id="fechaDeNacimiento" class="input fechaDeNacimiento" type="date" placeholder="Ej: 07/08/1984" value="2024-12-02" required>
             </div>
 
             <div class="division adicional">
@@ -122,10 +128,16 @@
 
             <div class="division adicional">
                 <label class="subtitulo-ingreso-de-datos">Correo Electrónico:</label>
-                <input id="correoElectronico" class="input correoElectronico" type="email" placeholder="Ej: javi@gmail.com" required>
+                <input id="correoElectronico" class="input correoElectronico" type="email" placeholder="Ej: javi@gmail.com" value="javi@gmail.com" required>
             </div>
         </section>
 
+        <div class="lineaSeparadora">            
+        </div>
+
+        <div class="botones">
+            <button id="anadirEstudiante" class="anadirEstudiante" name="Añadir nuevo Estudiante">Añadir Estudiante</button>
+        </div>
 
         <div class="botones">
             <input type='submit' id="boton-ingresar" class="boton-ingresar">
